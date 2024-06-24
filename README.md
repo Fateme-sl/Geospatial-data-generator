@@ -60,23 +60,26 @@ You can install the necessary Python packages using pip. Run the following comma
 
 
 #Running the Scripts
-To run the scripts, follow these steps:
+To run the scripts, make sure your input data and the scripts are in the same folder, open your terminal, go to the directory, and follow these steps:
 
-- Vector Generation:
-  Run the following command in your terminal
-  - python VectorGeneration.py
+- Vector Generation section1:
+  Place your LINES.txt and LINESIDX.DAT files in the specified directory. Run the following command in your terminal
+  - python VectorGeneration-section1.py
+- Ensure your JSON files, generated in section 1, are in the specified directory. Run the following command in your terminal
+  - python VectorGeneration-section2.py
+- If you also want to turn all the previous JSON files into one JSON file, ensure your JSON files, generated in section 1, are in the specified directory. Run the following command in your terminal:
+  - python VectorGeneration-section3.py
 
 
 - Splitting Polygons:
-   Run the following command in your terminal
+   Place your LINES.txt and LINESIDX.txt files in the specified directory, and insert the ContourID and splitting coordinate of the troubled polygons in the script. Run the following command in your terminal:
   - python SpillitingPolygon.py
 
 
 
 
-
 - Raster Generation:
-  Run the following command in your terminal
+  Place your Lat.txt, Long.txt, and Value.txt files in the specified directory. Run the following command in your terminal
   - python RasterGeneration.py
 
 
