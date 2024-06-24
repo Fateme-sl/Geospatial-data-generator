@@ -10,15 +10,27 @@ _Splitting Polygons: Dividing polygons based on specific longitude criteria and 
 
 #Requirements
 Python Packages
+
+
 To run the scripts, the following Python packages are required:
+
 _json
+
 _collections
+
 _os
+
 _pandas
+
 _geopandas
+
 _shapely
+
 _numpy
+
 _gdal
+
+
 #Installation
 You can install the necessary Python packages using pip. Run the following command in your terminal:
 "pip install json pandas geopandas shapely numpy gdal"
