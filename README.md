@@ -5,22 +5,22 @@ Telecommunication companies often need to analyze geographical data to optimize 
 
 Key features of this project include:
 - Reading telecommunication data from a flat file.
-- Generating geographical polygons from coordinate data.
-- Saving the polygons in a GeoJSON format for easy visualization and analysis.
+- Generating geographical polygons and rasters from coordinate data.
+- Saving the output in a suitable format for easy visualization and analysis in GIS applications.
 
-This project involves the processing and conversion of geographical data, specifically contour lines, from text files into various formats suitable for GIS applications. The workflow includes generating vector data from text files, splitting polygons based on specified criteria, and converting the data into raster formats. The project is divided into three main sections:
-
+The project is divided in the following parts:
 1_Vector Generation:
-_Parsing text files containing geographical coordinates and converting them to JSON polygon types.
+_Parsing text files containing geographical coordinates and converting them to JSON, GeoJSON, and GeoPackage.
 _Splitting Polygons: Dividing polygons based on specific longitude criteria and generating new JSON files.
 
-2_Raster Generation: Converting the JSON files into GeoPackage and GeoJSON formats, and generating raster files from the geographical data.
+2_Raster Generation:
+Converting the flat files of rasters including coordinate files, and value files into raster files with GeoTIFF format.
+
 
 #Requirements
 Python Packages
 
-
-To run the scripts, the following Python packages are required:
+To run the scripts, the following Python packages are required, as mentioned in the requirements.txt:
 
 _json
 
@@ -44,6 +44,7 @@ _gdal
 #Installation
 You can install the necessary Python packages using pip. Run the following command in your terminal:
 "pip install json pandas geopandas shapely numpy gdal"
+
 
 #Script Descriptions
 _Section 1: Vector Generation
