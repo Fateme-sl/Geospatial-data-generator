@@ -41,23 +41,15 @@ Python Packages
 
 To run the scripts, the following Python packages are required, as mentioned in the requirements.txt:
 
-_json
-
-_collections
-
-_os
-
-_osgeo
-
-_pandas
-
-_geopandas
-
-_shapely
-
-_numpy
-
-_gdal
+- json
+- collections
+- os
+- osgeo
+- pandas
+- geopandas
+- shapely
+- numpy
+- gdal
 
 
 
@@ -104,22 +96,33 @@ generate_raster_files(): Generates raster files from latitude and longitude data
 #Running the Scripts
 To run the scripts, follow these steps:
 
-Vector Generation:
-
-Run the first script to parse text files and generate JSON files in the specified output directory.
-
-
-Splitting Polygons: 
-
-Run the second script to split the polygons and save the new JSON files.
+- Vector Generation:
+  Run the following command in your terminal
+  - python VectorGeneration.py
 
 
-Raster Generation:
+- Splitting Polygons:
+   Run the following command in your terminal
+  - python SpillitingPolygon.py
 
-Run the third script to convert the JSON files into GeoPackage and GeoJSON formats and generate raster files.
+
+
+
+
+- Raster Generation:
+  Run the following command in your terminal
+  - python RasterGeneration.py
 
 
 
 #Input data format:
+- For Vector Generation, our input data should be two .DAT files with the following formats:
+  - LINES.DAT: This contains 3 columns for each polygon index, which is specified in the beginning of each series of coordinates as a header line, the first column is the Latitude, the second is the Longitude, and the third is the point number in the corresponding polygon.
+  - LINESIDX.DAT: This has 2 columns, the first column is the index of the polygon, the second column is the corresponding value of the polygon.
+  Ensure that the input text files (LINES.txt and LINESIDX.DAT) and the output directories are correctly specified in the scripts before running them.
 
-Ensure that the input text files (LINES.txt and LINESIDX.DAT) and the output directories are correctly specified in the scripts before running them.
+- for Raster Generation, our input format would be:
+  - Lat.txt: Latitude for each pixel.
+  - Long.txt: Longitude for each pixel.
+  - Value.txt: value of each pixel.
+  we also specify the pixel size of our raster data.
