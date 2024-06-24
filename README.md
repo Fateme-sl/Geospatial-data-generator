@@ -12,13 +12,16 @@ Key features of this project include:
 The project is divided into the following parts:
 - Vector Generation:
   - Section 1: Converting Text Files to JSON-Polygons
-This script parses text files to create JSON files representing polygons. Each polygon's points are derived from given coordinates, and values are assigned based on an index file.
+    This script parses text files to create JSON files representing polygons. Each polygon's points are derived from given coordinates, and values are assigned based on an index file.
+  - Section 2: Converting JSON Files to GPKG
+    This script reads multiple JSON files containing polygon data and combines them into a single GeoPackage (GPKG) file.
+  - Section 3: Converting JSON Files to Single JSON or GeoJSON
+    This script aggregates multiple JSON files into a single JSON file or GeoJSON file, making it easier to handle and visualize in GIS software like QGIS.
 
-- Section 2: Converting JSON Files to GPKG
-This script reads multiple JSON files containing polygon data and combines them into a single GeoPackage (GPKG) file.
 
-- Section 3: Converting JSON Files to Single JSON or GeoJSON
-This script aggregates multiple JSON files into a single JSON file or GeoJSON file, making it easier to handle and visualize in GIS software like QGIS.
+
+
+
 
 
 - Splitting Polygons:
