@@ -12,11 +12,12 @@ Key features of this project include:
 The project is divided in the following parts:
 
 1_Vector Generation:
-_Parsing text files containing geographical coordinates and converting them to JSON, GeoJSON, and GeoPackage.
-_Splitting Polygons: Dividing polygons based on specific longitude criteria and generating new JSON files.
+- Parsing text files containing geographical coordinates and converting them to JSON, GeoJSON, and GeoPackage.
+- Splitting Polygons: Dividing polygons based on specific longitude criteria and generating new JSON files.
 
 2_Raster Generation:
 Converting the flat files of rasters including coordinate files, and value files into raster files with GeoTIFF format.
+
 
 
 #Requirements
@@ -43,9 +44,11 @@ _numpy
 _gdal
 
 
+
 #Installation
 You can install the necessary Python packages using pip. Run the following command in your terminal:
 "pip install json pandas geopandas shapely numpy gdal"
+
 
 
 #Script Descriptions
@@ -81,6 +84,7 @@ read_values_file(): Reads contour values from a file.
 generate_raster_files(): Generates raster files from latitude and longitude data.
 
 
+
 #Running the Scripts
 To run the scripts, follow these steps:
 
@@ -97,6 +101,7 @@ Run the second script to split the polygons and save the new JSON files.
 Raster Generation:
 
 Run the third script to convert the JSON files into GeoPackage and GeoJSON formats and generate raster files.
+
 
 
 #Input data format:
