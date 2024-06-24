@@ -1,0 +1,9 @@
+json
+collections
+os
+osgeo
+pandas
+geopandas
+shapely
+numpy
+gdal
