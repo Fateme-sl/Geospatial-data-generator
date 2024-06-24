@@ -8,7 +8,9 @@ Key features of this project include:
 - Generating geographical polygons and rasters from coordinate data.
 - Saving the output in a suitable format for easy visualization and analysis in GIS applications.
 
+
 The project is divided in the following parts:
+
 1_Vector Generation:
 _Parsing text files containing geographical coordinates and converting them to JSON, GeoJSON, and GeoPackage.
 _Splitting Polygons: Dividing polygons based on specific longitude criteria and generating new JSON files.
@@ -78,10 +80,25 @@ contour_to_json(): Converts contour objects to JSON format.
 read_values_file(): Reads contour values from a file.
 generate_raster_files(): Generates raster files from latitude and longitude data.
 
+
 #Running the Scripts
 To run the scripts, follow these steps:
 
-Vector Generation: Run the first script to parse text files and generate JSON files in the specified output directory.
-Splitting Polygons: Run the second script to split the polygons and save the new JSON files.
-Raster Generation: Run the third script to convert the JSON files into GeoPackage and GeoJSON formats and generate raster files.
+Vector Generation:
+
+Run the first script to parse text files and generate JSON files in the specified output directory.
+
+
+Splitting Polygons: 
+
+Run the second script to split the polygons and save the new JSON files.
+
+
+Raster Generation:
+
+Run the third script to convert the JSON files into GeoPackage and GeoJSON formats and generate raster files.
+
+
+#Input data format:
+
 Ensure that the input text files (LINES.txt and LINESIDX.DAT) and the output directories are correctly specified in the scripts before running them.
