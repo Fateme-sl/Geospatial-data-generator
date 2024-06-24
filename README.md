@@ -9,14 +9,26 @@ Key features of this project include:
 - Saving the output in a suitable format for easy visualization and analysis in GIS applications.
 
 
-The project is divided in the following parts:
+The project is divided into the following parts:
+- Vector Generation:
+1- Section 1: Converting Text Files to JSON-Polygons
+This script parses text files to create JSON files representing polygons. Each polygon's points are derived from given coordinates, and values are assigned based on an index file.
 
-1_Vector Generation:
-- Parsing text files containing geographical coordinates and converting them to JSON, GeoJSON, and GeoPackage.
-- Splitting Polygons: Dividing polygons based on specific longitude criteria and generating new JSON files.
+2- Section 2: Converting JSON Files to GPKG
+This script reads multiple JSON files containing polygon data and combines them into a single GeoPackage (GPKG) file.
 
-2_Raster Generation:
-Converting the flat files of rasters including coordinate files, and value files into raster files with GeoTIFF format.
+3- Section 3: Converting JSON Files to Single JSON or GeoJSON
+This script aggregates multiple JSON files into a single JSON file or GeoJSON file, making it easier to handle and visualize in GIS software like QGIS.
+
+-Splitting Polygons:
+
+This script splits polygons that are attached based on a specified longitude. It ensures that each resulting polygon is properly closed and writes them to JSON files.
+
+- Raster Generation:
+- 
+This script generates raster files from flat files containing pixel sizes, coordinates, and values. It uses GDAL to create GeoTIFF files and handles necessary transformations and compressions.
+
+
 
 
 
