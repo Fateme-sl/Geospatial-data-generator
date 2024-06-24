@@ -5,6 +5,7 @@ This project involves the processing and conversion of geographical data, specif
 1_Vector Generation:
 _Parsing text files containing geographical coordinates and converting them to JSON polygon types.
 _Splitting Polygons: Dividing polygons based on specific longitude criteria and generating new JSON files.
+
 2_Raster Generation: Converting the JSON files into GeoPackage and GeoJSON formats, and generating raster files from the geographical data.
 
 #Requirements
@@ -38,8 +39,12 @@ This script processes the JSON files generated in the previous step, splits poly
 
 Key Functions:
 
-separate_polygon(): Splits polygons based on longitude values.
-close_contour_if_needed(): Ensures that polygons are closed by appending the starting point to the end if needed.
+separate_polygon(): 
+Splits polygons based on longitude values.
+
+close_contour_if_needed():
+Ensures that polygons are closed by appending the starting point to the end if needed.
+
 Section 3: Raster Generation
 This script converts the JSON files into a GeoPackage file and a GeoJSON file, making them readable in GIS applications like QGIS. It also generates raster files from the geographical data.
 
