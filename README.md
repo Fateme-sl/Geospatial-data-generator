@@ -1,5 +1,13 @@
 # Geospatial-data-generator
-#Project Overview
+#Project Overview:
+
+Telecommunication companies often need to analyze geographical data to optimize their services. This project automates the conversion of raw telecommunication flat data into visual polygons and rasters, facilitating better spatial analysis. This involves the processing and conversion of geographical data, specifically contour lines, from text files into various formats suitable for GIS applications.
+
+Key features of this project include:
+- Reading telecommunication data from a flat file.
+- Generating geographical polygons from coordinate data.
+- Saving the polygons in a GeoJSON format for easy visualization and analysis.
+
 This project involves the processing and conversion of geographical data, specifically contour lines, from text files into various formats suitable for GIS applications. The workflow includes generating vector data from text files, splitting polygons based on specified criteria, and converting the data into raster formats. The project is divided into three main sections:
 
 1_Vector Generation:
@@ -19,6 +27,8 @@ _json
 _collections
 
 _os
+
+_osgeo
 
 _pandas
 
